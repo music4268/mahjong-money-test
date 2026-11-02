@@ -13,7 +13,7 @@
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import {getAuth,signInAnonymously} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import {getDatabase,ref,get,set,push,onValue,runTransaction} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js';
-const config={apiKey:'AIzaSyBfS89htfSKgLRDo7kAes1IKHeArIyz6CY',authDomain:'mahjong-money.firebaseapp.com',databaseURL:'https://mahjong-money-default-rtdb.asia-southeast1.firebasedatabase.app',projectId:'mahjong-money',storageBucket:'mahjong-money.firebasestorage.app',messagingSenderId:'870936777992',appId:'1:870936777992:web:1e5302a1e4e45d35eb48bd'};
+const config={apiKey:'AIzaSyAkYCerFM-Lan4bkC6bFikRwybWwz-3fmg',authDomain:'mahjong-money-test.firebaseapp.com',databaseURL:'https://mahjong-money-test-default-rtdb.asia-southeast1.firebasedatabase.app',projectId:'mahjong-money-test',storageBucket:'mahjong-money-test.firebasestorage.app',messagingSenderId:'179123883491',appId:'1:179123883491:web:404fdf532fdda409e464d6'};
 const db=getDatabase(initializeApp(config)),auth=getAuth();
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>Number(n||0).toLocaleString('zh-TW');const say=s=>$('message').textContent=s;
